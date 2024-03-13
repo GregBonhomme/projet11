@@ -1,0 +1,8 @@
+.housingCard {
+    padding: 5% 5%;
+}
+
+.housingMenus {
+    display: flex;
+    gap: 5%;
+}

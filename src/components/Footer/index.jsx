@@ -1,4 +1,4 @@
-import '../../styles/footer.css'
+import '../../styles/components/footer.css'
 import logoWhite from '../../assets/img/logo_white.png'
 
 function Footer() {

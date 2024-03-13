@@ -1,0 +1,40 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex: 45% 1 1;
+}
+
+.menuBar {
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuBar img {
+    width: 24px;
+    height: 24px;
+    transition: 0.4s;
+}
+
+.arrowDown {
+    transform: rotate(-0.5turn);
+}
+
+.menuContent {
+    display: flex;
+    background-color: #F6F6F673;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 3%;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.hidden {
+    height: 0px !important;
+}

@@ -1,6 +1,7 @@
 import "../../styles/pages/housing.css"
 import { useParams } from "react-router-dom"
 import useFetch from "../../utils/hooks"
+import Carousel from "../../components/Carousel"
 import Tags from "../../components/Tags"
 import Rating from "../../components/Rating"
 import Collapse from "../../components/Collapse"
@@ -21,18 +22,19 @@ return (<div>
         <div>Chargement...</div>
     ):(
         <div className="housingCard">
+        <Carousel pictures={housing.pictures} />
         <div className="housingInfo">
-            <div className="housingInfo_left">
+            <div>
                 <h1>{housing.title}</h1>
                 <h2>{housing.location}</h2>
                 <Tags tags={housing.tags} />
             </div>
-            <div className="housingInfo_right">
+            <div>
                 <div className="hostTag">
-                    <h3>{housing.host.name}</h3>
+                    <h3>{housing.host.name.split(" ")[0]}<br/>{housing.host.name.split(" ")[1]}</h3>
                     <img src={housing.host.picture} alt= {"Portrait de "+housing.host.name } />
-                    <Rating rating={housing.rating} />
                 </div>
+                <Rating rating={housing.rating} />
             </div>
         </div>
         <div className="housingMenus">

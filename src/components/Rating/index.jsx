@@ -1,3 +1,4 @@
+import "../../styles/components/rating.css"
 import fullStar from "../../assets/img/fullStar.png"
 import emptyStar from "../../assets/img/emptyStar.png"
 

@@ -17,7 +17,7 @@ function Collapse ({title,id,children}) {
                 <span>{title}</span>
                 <img src={upArrow} className={isOpened ? "arrowDown" : ""} onClick={toggleContent} alt="Flèche vers le haut" />
             </div>
-            <div className={isOpened ? "menuContent" : "menuContent hidden"} ref={contentRef} style={(contentRef.current) ? {height: contentRef.current.scrollHeight + "px"} : {height: "0px"}}>
+            <div className={isOpened ? "menuContent" : "menuContent hidden"} ref={contentRef} style={(contentRef.current) ? {height: (contentRef.current.scrollHeight + 10)+ "px"} : {height: "0px"}}>
                 {children}
             </div>
         </div>

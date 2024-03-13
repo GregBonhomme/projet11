@@ -18,6 +18,7 @@
 .menuBar img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
     transition: 0.4s;
 }
 
@@ -28,6 +29,7 @@
 .menuContent {
     display: flex;
     background-color: #F6F6F673;
+    border-radius: 0px 0px 5px 5px;
     font-size: 18px;
     font-weight: 400;
     padding: 0 3%;

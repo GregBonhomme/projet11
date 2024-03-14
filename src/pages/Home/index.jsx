@@ -1,3 +1,5 @@
+import "../../styles/pages/home.css"
+import headlineBg from "../../assets/img/headline_bg.jpg"
 import useFetch from "../../utils/hooks"
 import { Link } from "react-router-dom"
 
@@ -14,15 +16,19 @@ function Home () {
     }
 
     return (
-        <ul>
-            {housings.map((housing)=>{ return (
-                <Link to={"/housing/"+ housing.id} key={housing.id}>
-                    <li className='card'>
+        <div id="home_body">
+            <div className="headline">
+                <img src={headlineBg} className="headline_bg" alt="Falaise en bordure de mer" />
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
+            <div className="card_list">
+                {housings.map((housing)=>{ return (
+                    <Link to={"/housing/"+ housing.id} className="card" key={housing.id}>
                         <h2>{housing.title}</h2>
-                    </li>
-                </Link>)
-            })}
-        </ul>
+                    </Link>)
+                })}
+            </div>
+        </div>
     )
 }
 

@@ -11,7 +11,7 @@ header nav {
     color: black;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 20%;
 }
 
 header nav.active {

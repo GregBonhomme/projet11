@@ -1,0 +1,10 @@
+.about_content {
+    padding: 20px 5%;
+}
+
+.about_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 7%;
+}

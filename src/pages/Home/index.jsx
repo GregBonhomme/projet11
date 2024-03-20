@@ -1,7 +1,8 @@
 import "../../styles/pages/home.css"
-import headlineBg from "../../assets/img/headline_bg.jpg"
+import homeHeadlineBg from "../../assets/img/home_headline_bg.jpg"
 import useFetch from "../../utils/hooks"
 import { Link } from "react-router-dom"
+import Headline from "../../components/Headline"
 
 function Home () {
     const {data,isLoading,error} = useFetch('/data/logements.json')
@@ -17,10 +18,7 @@ function Home () {
 
     return (
         <div id="home_body">
-            <div className="headline">
-                <img src={headlineBg} className="headline_bg" alt="Falaise en bordure de mer" />
-                <h1>Chez vous, partout et ailleurs</h1>
-            </div>
+            <Headline title="Chez vous, partout et ailleurs" image={homeHeadlineBg} alt="Falaise en bord de mer" />
             <div className="card_list">
                 {housings.map((housing)=>{ return (
                     <Link to={"/housing/"+ housing.id} className="card" key={housing.id}>

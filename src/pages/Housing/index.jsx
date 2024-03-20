@@ -22,33 +22,33 @@ return (<div>
         <div>Chargement...</div>
     ):(
         <div className="housingCard">
-        <Carousel pictures={housing.pictures} />
-        <div className="housingInfo">
-            <div>
-                <h1>{housing.title}</h1>
-                <h2>{housing.location}</h2>
-                <Tags tags={housing.tags} />
-            </div>
-            <div>
-                <div className="hostTag">
-                    <h3>{housing.host.name.split(" ")[0]}<br/>{housing.host.name.split(" ")[1]}</h3>
-                    <img src={housing.host.picture} alt= {"Portrait de "+housing.host.name } />
+            <Carousel pictures={housing.pictures} />
+            <div className="housingInfo">
+                <div>
+                    <h1>{housing.title}</h1>
+                    <h2>{housing.location}</h2>
+                    <Tags tags={housing.tags} />
                 </div>
-                <Rating rating={housing.rating} />
+                <div>
+                    <div className="hostTag">
+                        <h3>{housing.host.name.split(" ")[0]}<br/>{housing.host.name.split(" ")[1]}</h3>
+                        <img src={housing.host.picture} alt= {"Portrait de "+housing.host.name } />
+                    </div>
+                    <Rating rating={housing.rating} />
+                </div>
             </div>
-        </div>
-        <div className="housingMenus">
-            <Collapse title="Description" id="description">
-                <p> {housing.description} </p>
-            </Collapse>
-            <Collapse title="Équipements" id="equipment">
-                <ul>
-                    {housing.equipments.map((equipment,index) => {
-                        return <li key={index}>{equipment}</li>
-                    })}
-                </ul>
-            </Collapse>
-        </div>
+            <div className="housingMenus">
+                <Collapse title="Description" id="description">
+                    <p> {housing.description} </p>
+                </Collapse>
+                <Collapse title="Équipements" id="equipment">
+                    <ul>
+                        {housing.equipments.map((equipment,index) => {
+                            return <li key={index}>{equipment}</li>
+                        })}
+                    </ul>
+                </Collapse>
+            </div>
         </div>
     )}
     </div>

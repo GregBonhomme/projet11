@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import Headline from "../../components/Headline"
 
 function Home () {
-    const {data,isLoading,error} = useFetch('/data/logements.json')
+    const {data,error} = useFetch('/data/logements.json')
     let housings = []
 
     if (error) {

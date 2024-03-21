@@ -1,0 +1,47 @@
+.error_body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.error_body h1 {
+    margin: 40px 0px 0px 0px;
+    font-size: 288px;
+    font-weight: 700;
+    color: #FF6060;
+}
+
+.error_body span {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.error_body a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+    margin: 20px 0px 40px 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .error_body {
+        gap: 100px;
+    }
+
+    .error_body h1 {
+        font-size: 96px;
+    }
+
+    .error_body span {
+        font-size: 18px;
+        max-width: 260px;
+        align-self: center;
+    }
+
+    .error_body a {
+        font-size: 14px;
+    }
+}

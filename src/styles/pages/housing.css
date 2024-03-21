@@ -27,6 +27,13 @@ h3 {
 .housingInfo {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.housingInfoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .hostTag {
@@ -46,4 +53,53 @@ h3 {
 .housingMenus {
     display: flex;
     gap: 5%;
+}
+
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .housingCard {
+        padding: 10px 5% 30px 5%;
+    }
+
+    .housingInfo {
+        flex-direction: column;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .housingInfoLeft {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .housingInfoRight {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hostTag {
+        margin: 0;
+    }
+
+    .hostTag img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .housingMenus {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

@@ -5,6 +5,7 @@
     align-items: center;
     gap: 15px;
     padding: 0px;
+    margin: 0px;
 }
 
 .tag {
@@ -16,6 +17,16 @@
     font-size: 14px;
     font-weight: 700;
     border-radius: 10px;
-    padding: 1%;
+    padding: 1px 10px;
     min-width: 115px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .tag {
+        font-size: 10px;
+        min-width: 80px;
+        height: 18px;
+        border-radius: 8px;
+    }
 }

@@ -7,4 +7,16 @@
     flex-direction: column;
     gap: 25px;
     padding: 0px 7%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .about_content {
+        padding-top: 0px;
+    }
+
+    .about_menu {
+        padding: 0px;
+        margin: 0px;
+    }
 }

@@ -11,9 +11,28 @@ header nav {
     color: black;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    flex: 20% 0 1;
+}
+
+header nav a {
+    min-width: 110px;
 }
 
 .underlined {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    header img {
+        width: 145px;
+    }
+
+    header nav {
+        font-size: 12px;
+    }
+
+    header nav a {
+        min-width: 70px;
+        text-transform: uppercase;
+    }
 }

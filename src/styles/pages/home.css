@@ -2,7 +2,6 @@
     padding: 20px 5%;
 }
 
-
 .headline h1 {
     position: relative;
     color: white;
@@ -11,7 +10,6 @@
     margin: 0;
 }
 
-
 .card_list {
     background-color: rgba(246, 246, 246, 1);
     border-radius: 25px;
@@ -19,7 +17,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 60px 5%;
-    row-gap: 60px;
+    row-gap: 50px;
 }
 
 .card {
@@ -40,4 +38,21 @@
     font-weight: 700;
     align-self: flex-end;
     max-width: 320px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .card_list {
+        padding: 0px;
+        row-gap: 22px;
+        background: transparent;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .card {
+        max-width: none;
+        max-height: 225px;
+    }
 }

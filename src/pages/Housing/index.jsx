@@ -24,12 +24,12 @@ return (<div>
         <div className="housingCard">
             <Carousel pictures={housing.pictures} />
             <div className="housingInfo">
-                <div>
+                <div className="housingInfoLeft">
                     <h1>{housing.title}</h1>
                     <h2>{housing.location}</h2>
                     <Tags tags={housing.tags} />
                 </div>
-                <div>
+                <div className="housingInfoRight">
                     <div className="hostTag">
                         <h3>{housing.host.name.split(" ")[0]}<br/>{housing.host.name.split(" ")[1]}</h3>
                         <img src={housing.host.picture} alt= {"Portrait de "+housing.host.name } />

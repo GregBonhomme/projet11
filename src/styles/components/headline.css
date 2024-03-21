@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
     background-color: black;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .headline_bg {
@@ -18,4 +18,18 @@
     right: 0;
     width: 100%;
     height: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+    .headline {
+        height: 110px;
+        margin-bottom: 22px;
+        border-radius: 10px;
+    }
+
+    .headline h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
 }

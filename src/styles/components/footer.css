@@ -5,7 +5,7 @@ footer {
     align-items: center;
     background-color: black;
     gap: 30px;
-    padding: 70px 0px 40px 0px;
+    padding: 60px 0px 50px 0px;
 }
 
 footer img {
@@ -17,4 +17,17 @@ footer span {
     font-weight: 500;
     font-size: 24px;
     color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    footer {
+        gap: 15px;
+    }
+
+    footer span {
+        font-size: 12px;
+        max-width: 130px;
+    }
 }

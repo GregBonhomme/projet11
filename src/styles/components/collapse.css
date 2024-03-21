@@ -8,16 +8,18 @@
     background-color: #FF6060;
     color: white;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
-    padding: 10px;
+    padding: 2px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 52px;
 }
 
 .menuBar img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -39,4 +41,21 @@
 
 .hidden {
     height: 0px !important;
+}
+
+@media screen and (max-width: 900px) {
+
+    .menuBar {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .menuBar img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .menuContent {
+        font-size: 12px;
+    }
 }

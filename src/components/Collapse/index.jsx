@@ -2,7 +2,7 @@ import "../../styles/components/collapse.css"
 import { useState,useRef } from "react"
 import upArrow from "../../assets/img/up-arrow.png"
 
-function Collapse ({title,id,children}) {
+function Collapse ({title,children}) {
 
     const [isOpened, setIsOpened] = useState(false)
     const contentRef = useRef()

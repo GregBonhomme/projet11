@@ -22,6 +22,7 @@ function Home () {
             <div className="card_list">
                 {housings.map((housing)=>{ return (
                     <Link to={"/housing/"+ housing.id} className="card" key={housing.id}>
+                        <img src={housing.cover} className="card_bg" alt="Apperçu du logement" />
                         <h2>{housing.title}</h2>
                     </Link>)
                 })}

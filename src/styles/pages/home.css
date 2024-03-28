@@ -23,12 +23,24 @@
     display: flex;
     box-sizing: border-box;
     border-radius: 10px;
-    background-color: rgba(255, 96, 96, 1);
-    padding: 10px;
+    background-color: black;
     flex: 29% 1 0;
     max-width: 31%;
     min-width: 250px;
     aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    transition: all 0.5s;
 }
 
 .card h2 {
@@ -37,8 +49,13 @@
     font-weight: 700;
     align-self: flex-end;
     max-width: 320px;
+    position: relative;
+    padding: 10px;
 }
 
+.card :hover {
+    opacity: 1;
+}
 
 @media screen and (max-width: 900px) {
     .card_list {

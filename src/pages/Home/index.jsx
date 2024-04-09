@@ -1,6 +1,6 @@
 import "../../styles/pages/home.css"
 import homeHeadlineBg from "../../assets/img/home_headline_bg.jpg"
-import useFetch from "../../utils/hooks"
+import useFetch from "../../utils/hooks/useFetch"
 import { Link } from "react-router-dom"
 import Headline from "../../components/Headline"
 

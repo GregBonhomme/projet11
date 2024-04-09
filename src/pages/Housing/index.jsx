@@ -1,11 +1,11 @@
 import "../../styles/pages/housing.css"
 import { useParams } from "react-router-dom"
-import Error404 from "../Error404"
-import useFetch from "../../utils/hooks"
+import useFetch from "../../utils/hooks/useFetch"
 import Carousel from "../../components/Carousel"
 import Tags from "../../components/Tags"
 import Rating from "../../components/Rating"
 import Collapse from "../../components/Collapse"
+import Navigate from "../../utils/hooks/Navigate"
 
 function Housing () {
     const {id} = useParams()
@@ -18,8 +18,8 @@ if (error) {
 
 const housing = data.find((item) => item.id === id)
 
-if (housing === undefined) {
-    return (<Error404 />)
+if (!isLoading && housing === undefined) {
+    return (<Navigate url='/error404/' />)
 }
 
 return (<div>

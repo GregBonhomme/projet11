@@ -40,11 +40,12 @@
 @media screen and (max-width: 900px) {
 
     .carousel {
-        margin-bottom: 0px;
+        margin-bottom: 12px;
     }
 
     .carousel_picture {
         min-height: 255px;
+        border-radius: 10px;
     }
 
     .leftArrow {

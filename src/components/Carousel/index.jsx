@@ -19,11 +19,14 @@ function Carousel ({pictures}) {
     return (
         <div className="carousel_body">
             <div className="carousel">
-                {(pictures.length > 1) && <img src={leftArrow} className="leftArrow" onClick={previousId} alt="Flèche de défilement vers la gauche" />}
+                {(pictures.length > 1) && 
+                    <img src={leftArrow} className="leftArrow" onClick={previousId} alt="Flèche de défilement vers la gauche" />}
                 <img src={pictures[id]} className="carousel_picture" alt="Aperçu du logement" />
-                {(pictures.length > 1) && <img src={rightArrow} className="rightArrow" onClick={nextId} alt="Flèche de défilement vers la droite" />}
+                {(pictures.length > 1) && 
+                    <img src={rightArrow} className="rightArrow" onClick={nextId} alt="Flèche de défilement vers la droite" />}
             </div>
-            {(pictures.length > 1) && <span className="idCount">{id+1}/{maxId+1}</span>}
+            {(pictures.length > 1) && 
+                <span className="idCount">{id+1}/{maxId+1}</span>}
         </div>
     )
 }

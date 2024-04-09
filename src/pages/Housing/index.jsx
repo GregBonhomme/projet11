@@ -1,5 +1,6 @@
 import "../../styles/pages/housing.css"
 import { useParams } from "react-router-dom"
+import Error404 from "../Error404"
 import useFetch from "../../utils/hooks"
 import Carousel from "../../components/Carousel"
 import Tags from "../../components/Tags"
@@ -16,6 +17,10 @@ if (error) {
 }
 
 const housing = data.find((item) => item.id === id)
+
+if (housing === undefined) {
+    return (<Error404 />)
+}
 
 return (<div>
     {isLoading ? (

@@ -19,7 +19,7 @@ if (error) {
 const housing = data.find((item) => item.id === id)
 
 if (!isLoading && housing === undefined) {
-    return (<Navigate url='/error404/' />)
+    return (<Navigate url='/error/' />)
 }
 
 return (<div>

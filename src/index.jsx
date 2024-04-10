@@ -19,9 +19,9 @@ root.render(
         
         <Route path='/housing/:id' element={ <Housing />} />
         <Route path='/about/' element={<About />}/>
-        <Route path='/error404/' element={<Error404 />} />
+        <Route path='/error/' element={<Error404 />} />
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<Navigate url='/error404/' />}></Route>
+        <Route path='*' element={<Navigate url='/error/' />}></Route>
         
       </Routes>
       <Footer />
